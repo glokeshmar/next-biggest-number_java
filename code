@@ -1,0 +1,38 @@
+public class zoho_1 {
+	public static void main(String args[]) {
+		int ar[]= {8,4,1,9,6,2};
+		int st[]= {8,4,1,9,6,2};
+		int le =ar.length;
+		for(int i=0;i<le;i++) {
+			for(int j=0;j<le;j++) {
+				int temp;
+				if(st[i]<st[j]) {
+					temp=st[i];
+					st[i]=st[j];
+					st[j]=temp;
+				}
+			}}
+		/*
+			for(int k=0;k<le;k++) {
+				System.out.print(st[k]);
+				System.out.print(" ");
+			}
+			*/
+		
+		for(int i=0;i<le;i++) {
+				if(ar[i]!=0){
+						for(int j=0;j<le;j++){
+							if(ar[i]<st[j]) {
+					System.out.print(ar[i]+"->"+st[j]+" ");
+					break;
+							}
+				}
+				}
+		}
+		
+	}
+}
+
+
+output:
+8->9 4->6 1->2 6->8 2->4 
